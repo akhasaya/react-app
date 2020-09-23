@@ -1,4 +1,7 @@
 import React from "react";
+import {
+    Redirect
+} from 'react-router-dom';
 import './Articles.css';
 
 export default class Articles extends React.Component {
@@ -34,7 +37,7 @@ export default class Articles extends React.Component {
                         <div className = "ListThem">
                             {this.state.articles.map(article => (
                                 <div className = "Article-container">
-                                    <img className="Thumbinal" src={article.post_thumbnail.URL}></img> 
+                                    <img className="Thumbinal" alt={article.slug} src={article.post_thumbnail.URL}></img> 
                                     <div className="Title"> {article.title} </div>
                                     <div className="Date"> {article.date} </div> 
                                     {/* Need to modify date value */}
@@ -48,8 +51,7 @@ export default class Articles extends React.Component {
                             {/* This needs to work */}
                             <button variant="primary" onClick={this.displayNextPage.bind(this)}>Next Page</button>
                         </div>
-                    </div>
-                    )
+                    </div>)
                 }
             </div>
         );
