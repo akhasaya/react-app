@@ -1,0 +1,20 @@
+.post {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.Title {
+    text-align: center;
+}
+
+.Author {
+    float: left;
+}
+
+.Date {
+    float: left;
+}
+
+img {
+    max-width: 80vw;
+}

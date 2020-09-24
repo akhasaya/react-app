@@ -5,7 +5,8 @@ import Articles from './components/Articles';
 import {
   BrowserRouter as Router,
   Route,
-  Switch
+  Switch,
+  Link
 } from 'react-router-dom';
 import Posts from './components/Posts.js';
 
@@ -15,9 +16,11 @@ class App extends Component {
       <Router>
         <div>
           <header className="App-header">
+          <Link to={'/'}>
             <div>
-              <img className="App-logo"  src={TClogo} alt="TC Logo" />
+            <img className="App-logo"  src={TClogo} alt="TC Logo" />
             </div>
+            </Link>
           </header>
           <Switch>
             <Route path='/' exact component={Articles} />

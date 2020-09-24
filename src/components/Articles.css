@@ -11,6 +11,7 @@
     padding: 20px;
     padding-bottom: 20px;
     margin: 2vh;
+    color: black;
 }
 
 .footer {
@@ -27,19 +28,14 @@
 .Title {
     float: left;
     padding-left: 5%;
-    padding-top: 1%;
+    padding-top: 0.8%;
+    padding-bottom: 1%;
     font-size: larger;
     font-weight: bolder;
     font-style: oblique;
 }
 
-.Date {
-    align-self: inherit;
-    padding-left: 35%;
-    padding-top: 4%;
-}
-
-.Excerpt {
+.Content {
     float: left;
     padding-left: 5%;
     width: 50%;
